@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="frontend/assets/little-stitches-logo.svg" alt="Logo Little Stitches" width="104" height="104">
+  <img src="frontend/assets/little-stitches-logo.png" alt="Logo Little Stitches" width="104" height="104">
   <h1>Little Stitches</h1>
   <p><strong>Sistem Penjualan & Persediaan Produk Rajut</strong></p>
   <p>Ruang kerja sederhana untuk mengelola karya handmade, pelanggan, pembayaran, dan persediaan.</p>
@@ -124,7 +124,7 @@ Hubungan utama: satu pelanggan dapat memiliki banyak transaksi; satu transaksi p
 Logo benang dan palet warna README mengikuti identitas Little Stitches:
 
 <div align="center">
-  <img src="frontend/assets/little-stitches-logo.svg" alt="Logo Little Stitches — gulungan benang minimalis" width="88">
+  <img src="frontend/assets/little-stitches-logo.png" alt="Logo Little Stitches — gulungan benang minimalis" width="88">
   <br>
   <strong>Hangat, lembut, dan dirajut dengan hati.</strong>
 </div>
