@@ -3,6 +3,7 @@
   <h1>Little Stitches</h1>
   <p><strong>Sistem Penjualan & Persediaan Produk Rajut</strong></p>
   <p>Ruang kerja sederhana untuk mengelola karya handmade, pelanggan, pembayaran, dan persediaan.</p>
+  <p><a href="https://faniahidayatul46-dev.github.io/Sistem-Penjualan-Toko-Rajut/frontend/index.html"><strong>🧶 Buka Aplikasi Little Stitches</strong></a></p>
 
   <p>
     <img alt="Frontend" src="https://img.shields.io/badge/Frontend-HTML%20%7C%20CSS%20%7C%20JavaScript-8f4d6c?style=flat-square">
@@ -46,6 +47,7 @@ Little Stitches adalah aplikasi web untuk operasional penjualan dan persediaan p
 
 ```text
 .
+├── index.html                 # Entry point GitHub Pages; mengarahkan ke frontend
 ├── backend/
 │   └── app.js                  # Server Node.js dan endpoint health check
 ├── database/
@@ -116,6 +118,7 @@ Hubungan utama: satu pelanggan dapat memiliki banyak transaksi; satu transaksi p
 - Backend saat ini adalah server file statis kecil; operasi data aplikasi dilakukan dari browser ke Supabase REST API.
 - Untuk deployment berbasis Node.js, jalankan `node backend\app.js` pada layanan hosting yang mendukung Node.js dan atur `PORT` melalui environment layanan bila diperlukan.
 - Jika hanya menerbitkan frontend statis, host isi folder `frontend/` dan pastikan `frontend/js/config.js` berisi konfigurasi project yang benar.
+- **GitHub Pages:** pada repository, buka **Settings → Pages**, pilih **Deploy from a branch**, pilih branch tempat proyek disimpan dan folder **/(root)**. File [`index.html`](index.html) di root akan meneruskan pengunjung ke aplikasi di folder `frontend/`. Setelah deployment selesai, buka URL Pages yang ditampilkan pada pengaturan tersebut.
 - `schema.sql` mengaktifkan akses publik pada tabel dan bucket sesuai pola aplikasi saat ini. Tinjau kebijakan Row Level Security dan Storage sebelum menggunakan data produksi.
 - Aplikasi tidak menyimpan atau membutuhkan kredensial server di browser.
 
