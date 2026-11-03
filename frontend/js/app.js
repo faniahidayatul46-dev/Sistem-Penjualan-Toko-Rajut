@@ -371,13 +371,13 @@ async function sendReceiptToWhatsApp(sale, items, paymentSummary) {
   shareButton.disabled = true;
   try {
     const imageBlob = await receiptImageBlob(sale, items, paymentSummary);
-    const invoice = String(sale.invoice_no || "struk").replace(/[^a-zA-Z0-9_-]/g, "-");
-    const imageFile = new File([imageBlob], `Little-Stitches-${invoice}.png`, { type: "image/png" });
-    if (navigator.share && navigator.canShare?.({ files: [imageFile] })) {
-      await navigator.share({ files: [imageFile], title: `Struk ${sale.invoice_no || "Little Stitches"}`, text: message });
-      notify("Gambar struk berhasil dibagikan");
-      return;
-    }
+    
+    
+    
+
+
+
+
 
     downloadReceiptImage(imageBlob, sale);
     const whatsappUrl = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
@@ -386,7 +386,7 @@ async function sendReceiptToWhatsApp(sale, items, paymentSummary) {
     link.target = "_blank";
     link.rel = "noopener noreferrer";
     link.click();
-    notify("Gambar struk diunduh. Lampirkan file PNG pada chat WhatsApp yang terbuka.");
+    notify("Chat WhatsApp pelanggan dibuka dan gambar struk diunduh. Lampirkan file PNG pada chat tersebut.");
   } catch (error) {
     if (error.name === "AbortError") return;
     notify("Gambar struk gagal dibagikan");
@@ -976,7 +976,7 @@ function showSettlementForm(sale) {
     if (!proofFile?.size) {
       notify("Bukti pelunasan wajib diunggah");
       form.querySelector("[name=payment_proof_file]").reportValidity();
-      return;
+
     }
     const submitButton = form.querySelector(".form-actions .btn:last-child");
     submitButton.disabled = true;
@@ -1036,14 +1036,14 @@ function showSaleForm(sale = null) {
     const cart = e.target.getCart();
     if (!cart.length || data.subtotal < 50000) {
       notify("Minimal pembelian produk adalah Rp50.000");
-      return;
+
     }
     const proofFile = formData.get("payment_proof_file");
     const storedProofUrl = String(formData.get("payment_proof_url") || "");
     if (!proofFile?.size && !storedProofUrl) {
       notify("Bukti pembayaran wajib diunggah");
       saleForm.querySelector("[name=payment_proof_file]").reportValidity();
-      return;
+
     }
     delete data.payment_proof_file;
     data.payment_status = editing && data.paid_amount === Number(sale.paid_amount || 0) ? sale.payment_status : "pending";
