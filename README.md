@@ -28,7 +28,7 @@ Little Stitches adalah aplikasi web untuk operasional penjualan dan persediaan p
 - **Dashboard** untuk melihat ringkasan penjualan, jumlah produk dan pelanggan, tren penjualan, serta stok yang perlu diperhatikan.
 - **Produk rajut** untuk mengelola katalog, harga, kategori, dan jumlah persediaan.
 - **Pelanggan** untuk menyimpan informasi kontak dan mengurutkan daftar berdasarkan tanggal maupun alfabet.
-- **Pembayaran** untuk mencatat pembelian langsung di toko atau melalui WhatsApp/online, memilih QRIS atau transfer, dan merekam DP 50% atau pembayaran penuh.
+- **Pembayaran** untuk mencatat pembelian langsung di toko atau melalui WhatsApp/online tanpa batas minimum subtotal. Delivery dikenai ongkir Rp15.000 untuk subtotal di bawah Rp50.000 dan gratis ongkir mulai Rp50.000; ambil di tempat tidak dikenai ongkir.
 - **Struk** untuk melihat dan mencetak transaksi serta membuat gambar struk PNG. Tombol WhatsApp membuka chat ke nomor pelanggan yang tersimpan dan mengunduh gambar struk untuk dilampirkan, bersama pesan yang dapat disunting.
 - **Jurnal persediaan** untuk melihat transaksi debit-kredit, mencatat pembelian, dan mengoreksi stok masuk, rusak, atau hilang.
 - **Ekspor Excel** untuk mengunduh data dalam workbook dengan sheet Produk, Pelanggan, Transaksi & Jurnal, dan Detail Item.
